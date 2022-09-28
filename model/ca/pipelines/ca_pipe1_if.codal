@@ -46,11 +46,8 @@ event fe : pipeline(pipe.IFID)
 
         // Instruction request
         cache_hprot = pma_hprot(s_if_nextpc[31 .. 2] :: (uint2)0, 0u);
-#ifdef OPTION_CACHES_ENABLED
-        idcache.if_icache.transport(CP_PHS_ADDRESS, CP_AHB_NONSEQ, CP_AHB_READ, s_if_nextpc[31 .. 2] :: (uint2) 0, CP_AHB_SIZE_32, cache_hprot, CP_AHB_UNLOCK);
-#else
         if_fetch.transport(CP_PHS_ADDRESS, CP_AHB_NONSEQ, CP_AHB_READ, s_if_nextpc[31 .. 2] :: (uint2) 0, CP_AHB_SIZE_32, cache_hprot, CP_AHB_UNLOCK);
-#endif
+
         // Update the pipeline registers between the Instruction Fetch (IF) and Instruction Decode (ID) stages
         if_output();
     };

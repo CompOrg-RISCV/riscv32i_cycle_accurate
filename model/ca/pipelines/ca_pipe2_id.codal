@@ -45,11 +45,7 @@ event id : pipeline(pipe.IDEX)
         // Set local stall.
         s_id_stall = 0;
 
-#ifdef OPTION_CACHES_ENABLED
-        idcache.if_icache.transport(CP_PHS_DATA, cache_ready, cache_response, id_instr_temp); // Read the instruction from memory request in if-stage
-#else
         if_fetch.transport(CP_PHS_DATA, cache_ready, cache_response, id_instr_temp); // Read the instruction from memory request in if-stage
-#endif
 
         if (!cache_ready) s_id_icache_stall = true;                     // If i-cache not ready, stall instructions until i-cache is ready
         else s_id_icache_stall = false;
