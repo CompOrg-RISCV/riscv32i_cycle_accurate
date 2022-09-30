@@ -165,6 +165,9 @@ event id_output : pipeline(pipe.IDEX)
         //              r_idex_src2_imm = 0;
         //              break;
         //      }
+        //
+        // Complete the switch statement below using the pipeline register resource that you added in the 
+        // previous step of this assignment.
 
 
 
