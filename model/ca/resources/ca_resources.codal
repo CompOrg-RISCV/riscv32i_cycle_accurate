@@ -100,10 +100,10 @@ signal bit[BOOLEAN_BIT]        s_id_jump_inst;             // bit used to notify
                                                    { pipeline = pipe.IDEX; };    // rd (write) register number
                                                                                   // register file output for src1, rs1
                                                                                   // register file output for src2, rs2
+                                                                                  // RF write? r_idex_regwrite
                                                                                   // immediate value for src2
 
 register bit[ALUOP_W]   r_idex_aluop               { pipeline = pipe.IDEX; };    // ALU opcode
-register bit[BOOLEAN_BIT]  r_idex_regwrite            { pipeline = pipe.IDEX; };    // Does the current instruction wrt to RF
 register bit[ALU_SRC1_SEL_W] r_idex_src1_sl        { pipeline = pipe.IDEX; };    // ALU src1 select lines for mux
 register bit[ALU_SRC2_SEL_W] r_idex_src2_sl        { pipeline = pipe.IDEX; };    // ALU src2 select lines for mux
 register bit[BOOLEAN_BIT]  r_idex_branch_inst         { pipeline = pipe.IDEX; };    // If true, conditional branch instruction
