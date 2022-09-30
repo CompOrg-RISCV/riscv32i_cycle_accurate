@@ -172,23 +172,27 @@ event id_output : pipeline(pipe.IDEX)
 
         // Use the Program Counter IDEX pipeline register thate you declared in ca_resources.codal
         // What register from the IFID pipeline register will you use to pass the PC to the EX stage
+        // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
 
         // Use the register file ouptput for src1 IDEX pipeline register you declared in ca_resources.codal
         // What signal from the fe event will you use to pass the rs1 register value to the EX stage?
+        // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
 
 
         // Use the register file ouptput for src2 IDEX pipeline register you declared in ca_resources.codal
         // What signal from the fe event will you use to pass the rs2 register value to the EX stage?
+        // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
 
 
         // Use the rd (destination) register IDEX pipeline register that you declared in ca_resources.codal
         // What signal from the instruction parsing will you set the following IDEX pipeline register?
+        // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
 
@@ -200,6 +204,7 @@ event id_output : pipeline(pipe.IDEX)
         // register, rd, is 0 and if not 0, assign the s_id_regwrite signal from the decoder
         //
         // What signal will you use in the if statement from the instruction parsing?
+        // You just added this pipeline register resource in the previous step of this assignment
         // Write this if, else statement here for r_idex_regwrite
 
 
