@@ -41,7 +41,8 @@ event id : pipeline(pipe.IDEX)
         uint32 id_instr_temp;
         uint32 temp_instr;
         bool cache_ready, cache_response;
-
+        uint2 instr_control;
+        
         // Set local stall.
         s_id_stall = 0;
 
