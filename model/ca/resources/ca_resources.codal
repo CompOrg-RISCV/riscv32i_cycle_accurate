@@ -141,6 +141,7 @@ register bit[ADDR_W] r_exmem_target_address         { pipeline = pipe.EXMEM; }; 
 // Memory stage
 // -------------------------------------------------------------------------------------------------
 signal bit[BOOLEAN_BIT] s_me_take_branch;                                        //Informs the pipeline in a branch or jump is occuring
+signal bit[BOOLEAN_BIT]   s_me_mem_busy;                                         // Memory bus is busy
 
 
 // MEMWB pipeline register
