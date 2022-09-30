@@ -40,6 +40,9 @@ event wb : pipeline(pipe.MEMWB)
         //
         // There are three ports to the register file, two read (source) inputs and one write port in this
         // 5-stage CPU design
+        //
+        // In assignment 5, you will use all the three pipeline registers that were passed into the WB stage,
+        // regwrite, rd, and alu_result
 
 
 
