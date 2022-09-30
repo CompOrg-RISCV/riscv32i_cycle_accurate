@@ -35,15 +35,19 @@ event wb : pipeline(pipe.MEMWB)
         // Set local stall.
         s_wb_stall = 0;
 
-        // if the register write control bit is true, update the register file with the memwb result data bus
+        // if the register write (regwrite) control bit is true, update the register file with the memwb 
+        // alu result and if false, do nothing
+        //
+        // There are three ports to the register file, two read (source) inputs and one write port in this
+        // 5-stage CPU design
 
 
 
 
         // With the Write Back (WB) stage as the last stage in this RISCV32I 5-stage pipeline implementation,
-        // there is now wb_output event since there is no requirement for a pipeline register.  You can
-        // view the write to the register file which occurs at the same positive clock edge as a "pipeline
-        // register" since it is storing the output of the WB stage if required.
+        // there is no wb_output event since there is no requirement for a pipeline register.  
+        // The write to the register file occurs at the same positive clock edge as a "pipeline
+        // register." You can look at the write to the register file as the output of the wb stage.
 
 
     };
