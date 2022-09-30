@@ -69,7 +69,7 @@ element i_hw_halt
         s_id_branch_inst = false;
         s_id_jump_inst = false;
 
-        // Load / store control singals
+        // Load / store control signals
         s_id_mem_ops = MEM_NOP;
         s_id_memread = false;
 
@@ -116,7 +116,7 @@ element i_hw_itype_alu
         s_id_branch_inst = false;
         s_id_jump_inst = false;
 
-        // Load / store control singals
+        // Load / store control signals
         s_id_mem_ops = MEM_NOP;
         s_id_memread = false;
 
@@ -158,7 +158,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -200,7 +200,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -243,7 +243,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -284,7 +284,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -326,7 +326,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -367,7 +367,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_mem_ops =
 //        s_id_memread =
 //
@@ -412,7 +412,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_memread =
 //
 //        // HALT Command
@@ -457,7 +457,7 @@ element i_hw_itype_alu
 //        s_id_branch_inst =
 //        s_id_jump_inst =
 //
-//        // Load / store control singals
+//        // Load / store control signals
 //        s_id_memread =
 //
 //        // HALT Command
