@@ -177,14 +177,16 @@ event id_output : pipeline(pipe.IDEX)
 
 
         // Use the register file ouptput for src1 IDEX pipeline register you declared in ca_resources.codal
-        // What signal from the fe event will you use to pass the rs1 register value to the EX stage?
+        // What signal from the id (Instruction Decode) event will you use to pass the rs1 register value to 
+        // the EX stage?  
         // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
 
 
         // Use the register file ouptput for src2 IDEX pipeline register you declared in ca_resources.codal
-        // What signal from the fe event will you use to pass the rs2 register value to the EX stage?
+        // What signal from the id (Instruction Decode) event will you use to pass the rs2 register value to 
+        // the EX stage?  
         // You just added this pipeline register resource in the previous step of this assignment
         // Add this assignment here:
 
@@ -201,7 +203,8 @@ event id_output : pipeline(pipe.IDEX)
         // we can disable the writes to register 0
         //
         // Use an if statement to disable the regwrite control-signal, make false, if the destination
-        // register, rd, is 0 and if not 0, assign the s_id_regwrite signal from the decoder
+        // register, rd, is 0 and if not 0, assign the s_id_regwrite signal from the decoder, 
+        // s_id_regwrite
         //
         // What signal will you use in the if statement from the instruction parsing?
         // You just added this pipeline register resource in the previous step of this assignment
