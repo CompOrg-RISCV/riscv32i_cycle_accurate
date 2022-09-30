@@ -144,7 +144,7 @@ signal bit[BOOLEAN_BIT] s_me_take_branch;                                       
 
 
 // MEMWB pipeline register
-                                                        // Data result from Memory stage
+                                                        // ALU result from Memory stage
                                                         // Destination, rd, register index
                                                         // Register Write (regwrite)
 
