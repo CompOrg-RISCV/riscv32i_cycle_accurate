@@ -57,11 +57,10 @@ event if_output : pipeline(pipe.IFID)
 {
     semantics
     {
-        if(!s_me_mem_busy) r_ifid_pc = s_if_nextpc;
+       r_ifid_pc = s_if_nextpc;
 
-        if (s_me_take_branch) r_pc = s_if_nextpc + INSTR_SIZE;
-        else if (s_me_take_branch) r_pc = s_if_nextpc;
-        else if (!s_me_mem_busy)  r_pc = s_if_nextpc + INSTR_SIZE;
+        if (!s_me_mem_busy) r_pc = s_if_nextpc + INSTR_SIZE;
+        else r_pc = s_if_nextpc;
 
         r_id_icache_stall = s_id_icache_stall;
     };
