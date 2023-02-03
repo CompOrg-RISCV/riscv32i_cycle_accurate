@@ -98,8 +98,8 @@ signal bit[BOOLEAN_BIT]        s_id_jump_inst;             // bit used to notify
 // IDEX pipeline register
                                                    { pipeline = pipe.IDEX; };    // Program Counter
                                                    { pipeline = pipe.IDEX; };    // rd (write) register number
-                                                                                  // register file output for src1, rs1
-                                                                                  // register file output for src2, rs2
+                                                                                  // register file output for src1
+                                                                                  // register file output for src2
                                                                                   // RF write? r_idex_regwrite
                                                                                   // immediate value for src2
 
