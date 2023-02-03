@@ -142,7 +142,7 @@ DEF_OPC(sra, "sra", RTYPE_SRA)
 DEF_OPC(or, "or", RTYPE_OR)
 DEF_OPC(and, "and", RTYPE_AND)
 
-set opc_rtype_alu = opc_add, opc_sub, opc_sll, opc_slt, opc_sltu, opc_xor, opc_srl, opc_sra, opc_or, opc_and, opc_mask;
+set opc_rtype_alu = opc_add, opc_sub, opc_sll, opc_slt, opc_sltu, opc_xor, opc_srl, opc_sra, opc_or, opc_and;
 
 element i_rtype_alu           // define the instruction for the rtype arithmetic opcodes
 {
