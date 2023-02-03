@@ -157,7 +157,7 @@ event id_output : pipeline(pipe.IDEX)
         //
         // Example:
         //      switch (s_id_imm_gen_sel) {
-        //          case SPECIAL_ITYPE_IMM:
+        //          case SPECIAL_ITYPE_IMM_SEL:
         //              r_idex_src2_imm = s_id_imm_special_itype;
         //              break;
         //          ...
